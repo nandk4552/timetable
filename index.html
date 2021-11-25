@@ -12,7 +12,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="images/logo.png">
+    
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"
+    />
+    <link rel="icon" href="images/logo.png" />
 
     <title>IT Section B | TimeTable</title>
     <style>
@@ -22,9 +27,11 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="" width="25px"></a>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/"
+          ><img src="/images/logo.png" alt="" width="25px"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,9 +46,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/"
-                >Home</a
-              >
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/about.html"
@@ -53,13 +58,13 @@
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <div class="container my-5">
-      <h1 class="text-light text-center my-3">IT Section-B TimeTable</h1>
-      <table class="table table-hover table-dark table-hover text-light">
-        <thead>
+      <h1 class="text-dark text-center my-3">IT Section-B TimeTable</h1>
+      <table class="table table-hover table-dark table-hover text-light" id="myTable" >
+        <thead >
           <tr>
             <th scope="col">Day</th>
             <th scope="col">9AM-10AM</th>
@@ -144,6 +149,13 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myTable").DataTable();
+      });
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

@@ -12,6 +12,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
     <link
       rel="stylesheet"
@@ -19,11 +21,21 @@
     />
     <link rel="icon" href="images/logo.png" />
 
+
+
     <title>IT Section B | TimeTable</title>
     <style>
       td {
         text-align: center !important;
       }
+      .g-btn {
+        background-color: #25D366 !important;
+        color: #fff !important;
+        outline: none !important;
+        border: none !important;
+        font-size: 1.5rem;
+      }
+      
     </style>
   </head>
   <body>
@@ -56,15 +68,25 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
+           
           </ul>
         </div>
       </nav>
     </div>
 
-    <div class="container my-5">
+
+
+    <div class="container my-5 .col-6 .col-md-4">
+      <small>Click here to add into our Whatsapp Group </small>
+      <div>
+      <a href="https://chat.whatsapp.com/BmiPS9dklnM8EOLb6YpzDV" type="button" class="btn btn-primary g-btn">
+        IT section B (Unofficial) <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
       <h1 class="text-dark text-center my-3">IT Section-B TimeTable</h1>
-      <table class="table table-hover table-dark table-hover text-light" id="myTable" >
-        <thead >
+      
+      <table class="tbl-full my-3 table table-hover table-dark">
+        <thead>
           <tr>
             <th scope="col">Day</th>
             <th scope="col">9AM-10AM</th>

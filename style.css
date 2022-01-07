@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    padding-bottom: 30px;
+    font-size: 3.2rem;
+  }
+  .title::before {
+    content: "";
+    background: blue;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(70px);
+  }

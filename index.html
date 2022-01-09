@@ -28,14 +28,18 @@
       color: #fff !important;
       outline: none !important;
       border: none !important;
-      font-size: 1.5rem;
+    }
+
+    .g-btn {
+      opacity: 0.9;
     }
   </style>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark shadow-lg"
+    style="border-bottom: 1px solid rgba(0,0,0,0.2); box-shadow: 0 .5rem 1rem rgb(0, 0, 0,0.2) !important;">
     <div class="container-fluid">
       <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="" width="25px" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -59,90 +63,103 @@
     </div>
   </nav>
 
-
-
-
-  <div class="container my-5 .col-6 .col-md-4">
-    <small>Click here to add into our Whatsapp Group </small>
-    <div>
-      <a href="https://chat.whatsapp.com/BmiPS9dklnM8EOLb6YpzDV" type="button" class="btn btn-primary g-btn shadow-lg">
-        IT section B (Unofficial) <i class="fab fa-whatsapp"></i>
-      </a>
+  <div class="bg-dark banner me-md-3 pt-3 pb-5 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden w-100"
+    style="backdrop-filter: blur(15px) !important;">
+    <div class="my-3 pt-5">
+      <h2 class="display-5">Information Technology</h2>
+      <p class="lead">Section B</p>
     </div>
-    <div class="my-3">
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        New TimeTable <span class="badge bg-warning shadow-lg text-dark mx-2">New</span>
-      </button>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-center" id="exampleModalLabel">New Online classes TimeTable for IT B</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="tbl-full my-3 table table-hover table-dark">
-                <thead>
-                  <tr>
-                    <th scope="col">Day</th>
-                    <th scope="col">9:30AM-10:30AM</th>
-                    <th scope="col">10:45AM-11:45AM</th>
-                    <th scope="col">12:00PM-1:00PM</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">MONDAY</th>
-                    <td>CHEM</td>
-                    <td>PPS-1</td>
-                    <td>BEE</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">TUESDAY</th>
-                    <td>M-1</td>
-                    <td>BEE</td>
-                    <td>PPS-1</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">WEDNESDAY</th>
-                    <td>M-1</td>
-                    <td>CHEM</td>
-                    <td>BEE</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">THURSDAY</th>
-                    <td>CHEM</td>
-                    <td>M-1</td>
-                    <td>BEE</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">FRIDAY</th>
-                    <td>CHEM</td>
-                    <td>PPS-1</td>
-                    <td>M-1</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">SATURDAY</th>
-                    <td>BEE</td>
-                    <td>M-1</td>
-                    <td>PPS-1</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-            </div>
+    <small class="text-muted my-2">***Click here to add into our Whatsapp Group </small>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <div class="d-flex align-items-center justify-content-center">
+        <a target="_blank" href="https://chat.whatsapp.com/BmiPS9dklnM8EOLb6YpzDV" type="button"
+          class="btn btn-success shadow-lg">
+          IT section B (Unofficial) <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <div class="my-3">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-danger shadow-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          New TimeTable <span class="badge bg-warning shadow-lg text-dark mx-2">New</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="my-3">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center text-secondary" id="exampleModalLabel">New Online classes TimeTable for
+              IT B</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body container overflow-hidden">
+            <table class="tbl-full my-3 table table-hover table-light">
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">9:30AM-10:30AM</th>
+                  <th scope="col">10:45AM-11:45AM</th>
+                  <th scope="col">12:00PM-1:00PM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">MONDAY</th>
+                  <td>CHEM</td>
+                  <td>PPS-1</td>
+                  <td>BEE</td>
+                </tr>
+                <tr>
+                  <th scope="row">TUESDAY</th>
+                  <td>M-1</td>
+                  <td>BEE</td>
+                  <td>PPS-1</td>
+                </tr>
+                <tr>
+                  <th scope="row">WEDNESDAY</th>
+                  <td>M-1</td>
+                  <td>CHEM</td>
+                  <td>BEE</td>
+                </tr>
+                <tr>
+                  <th scope="row">THURSDAY</th>
+                  <td>CHEM</td>
+                  <td>M-1</td>
+                  <td>BEE</td>
+                </tr>
+                <tr>
+                  <th scope="row">FRIDAY</th>
+                  <td>CHEM</td>
+                  <td>PPS-1</td>
+                  <td>M-1</td>
+                </tr>
+                <tr>
+                  <th scope="row">SATURDAY</th>
+                  <td>BEE</td>
+                  <td>M-1</td>
+                  <td>PPS-1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
     <h1 class="title py-3 display-3 text-center">IT-B TimeTable</h1>
 
-    <table class="tbl-full my-3 table table-hover table-dark">
+    <table class="tbl-full my-3 table table-hover table-light">
       <thead>
         <tr>
           <th scope="col">Day</th>
@@ -218,8 +235,10 @@
         </tr>
       </tbody>
     </table>
-
+  </div>
+  <div class="container">
     <h1 class="py-3 title display-3 text-center py-2">Our Notes</h1>
+    <p class="text-muted"><small><i>***click the below links to download notes</i></small></p>
     <!-- accordion starts -->
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
@@ -254,6 +273,7 @@
           </div>
         </div>
       </div>
+
       <div class="accordion-item">
         <h1 class="accordion-header" id="headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -284,6 +304,7 @@
         </div>
       </div>
     </div>
+
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingThree">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -298,6 +319,7 @@
         </div>
       </div>
     </div>
+
 
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingFour">
@@ -338,20 +360,20 @@
         </div>
       </div>
     </div>
-
   </div>
 
+  </div>
   </div>
   <!-- accordion ends -->
 
   <!-- footer section starts -->
-  <div class="container">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+  <div class="container-fluid bg-dark py-1 mt-5">
+    <footer>
+      <ul class="nav justify-content-center border-bottom pb-2 mb-2">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-light">About</a></li>
       </ul>
-      <p class="text-center text-muted">© 2021 IT Section-B | Created with <i class="fas fa-heart text-danger"></i> By
+      <p class="text-center text-light">© 2022 IT Section-B | Created with <i class="fas fa-heart text-danger"></i> By
         NAND KISHORE</p>
     </footer>
   </div>

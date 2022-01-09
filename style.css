@@ -6,8 +6,9 @@
 .title {
     padding-bottom: 30px;
     font-size: 3.2rem;
-  }
-  .title::before {
+}
+
+.title::before {
     content: "";
     background: blue;
     height: 5px;
@@ -16,4 +17,29 @@
     margin-right: auto;
     display: block;
     transform: translateY(80px);
-  }
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.nav-masthead .nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}

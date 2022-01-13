@@ -19,6 +19,19 @@
     transform: translateY(80px);
 }
 
+.under::before {
+    content: "";
+    background: blue;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transform: translateY(58px);
+}
+
 .bg-purple {
     background-color: #6f42c1;
 }

@@ -32,6 +32,13 @@
     transform: translateY(58px);
 }
 
+.social-count {
+    color: #24292f;
+    background-color: #fff;
+    border-color: #ddddde;
+    border-color: rgba(27, 31, 36, .15);
+}
+
 .bg-purple {
     background-color: #6f42c1;
 }

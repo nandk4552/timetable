@@ -24,9 +24,9 @@
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark shadow-lg" style="border-bottom: 1px solid rgba(0,0,0,0.2); box-shadow: 0 .5rem 1rem rgb(0, 0, 0,0.2) !important;">
         <div class="container-fluid">
             <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="" width="25px" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
@@ -43,6 +43,40 @@
             </div>
         </div>
     </nav>
+
+    <!-- off canvas starts -->
+    <div class="offcanvas offcanvas-end d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="" width="25px" /></a>
+            <h5 id="offcanvasRightLabel">Information Technology</h5>
+            <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link active" aria-current="page">
+                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/about.html" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="/Notes.html" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> Notes
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    </div>
+    <!-- off canvas ends -->
+
 
     <div class="bg-dark banner me-md-3 pt-3 pb-5 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden w-100" style="backdrop-filter: blur(15px) !important;">
         <nav class="my-3" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">

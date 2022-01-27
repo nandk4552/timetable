@@ -393,7 +393,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Maths Notes
+          Maths Notes<span class="badge bg-warning text-dark shadow-lg mx-2">New</span>
         </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -409,9 +409,9 @@
                             Eigen Values and Eigen Vector</a>
                     </div>
                     <div class="my-3">
-                        <h6>UNIT 3</h6>
-                        <a target="z_blank" class="btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1rG7N6GTRTBKOy3xDhF9gRnK13Vt57Fmb/view?usp=sharing">
-                            Sequences and series</a>
+                        <h6>UNIT 3 </h6>
+                        <a target="z_blank" class="btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1hjWOFif29ytKN1_d8jf9SF1fsB3Jxr6H/view?usp=sharing">
+                            Sequences and series </a>
                     </div>
                 </div>
             </div>
@@ -490,9 +490,11 @@
             <div class="col-sm-6 my-2">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Chemistry Question Bank <span class="badge bg-warning text-dark shadow-lg mx-2">New</span></h5>
+                        <h5 class="card-title">Chemistry Qn Bank <span class="badge bg-warning text-dark shadow-lg mx-2">New</span></h5>
                         <a target="_blank" href="https://drive.google.com/file/d/1AzYgm9xaqA7cOUpAGm_-R051-wceCf0g/view?usp=sharing" class="btn btn-sm btn-primary">Questions</a>
-                        <a target="_blank" href="#" class="btn btn-sm btn-primary disabled">Answers</a>
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Nanu involve cheyaku nen Chemistry lo weaku mawa..">
+                            Answers
+                          </button>
                     </div>
                 </div>
             </div>
@@ -505,7 +507,9 @@
                         <h5 class="card-title">PPS-I Question Bank <span class="badge bg-warning text-dark shadow-lg mx-2">New</span><span class="text-muted fs-6 fst-italic">***answers in pps notes</span></h5>
 
                         <a target="_blank" href="https://drive.google.com/file/d/1W0lgN3vhTbmSHozN3sdJgrt-UD_O7W6B/view?usp=sharing" class="btn btn-sm  btn-primary">Questions</a>
-                        <a target="_blank" href="https://drive.google.com/file/d/1RZs-fw-tuYCnyLZv8j3kg0QjYs_b9LNB/view?usp=sharing" class="btn btn-sm btn-primary">Answers</a>
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Notes lo undi chusko mawa..">
+                            Answers
+                          </button>
                     </div>
                 </div>
             </div>
@@ -514,7 +518,9 @@
                     <div class="card-body">
                         <h5 class="card-title">M-I Question Bank <span class="badge bg-warning text-dark shadow-lg mx-2">New</span></h5>
                         <a target="_blank" href="https://drive.google.com/file/d/1liLSLGpbeqAzhEKqQH375VcslR40gRW8/view?usp=sharing" class="btn btn-sm btn-primary ">Questions</a>
-                        <a target="_blank" href="#" class="btn btn-sm btn-primary disabled">Answers</a>
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="niku telsutey nak send chey mawa">
+                            Answers
+                          </button>
                     </div>
                 </div>
             </div>
@@ -553,6 +559,12 @@
         $(document).ready(function() {
             $("#myTable").DataTable();
         });
+    </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
     </script>
 
 </body>

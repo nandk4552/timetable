@@ -65,12 +65,12 @@
 }
 
 .big-banner {
-    background-image: url('/images/re.png');
-    height: 760px;
+    background-image: url('/images/s.png');
+    height: 600px;
     position: relative;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: left;
+    background-size: auto;
     z-index: 1;
     opacity: .9;
     overflow: hidden;

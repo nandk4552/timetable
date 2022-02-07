@@ -119,7 +119,11 @@
 
                 <div class="btn-group btn-group-sm shadow-lg mt-0" role="group" aria-label="...">
                     <a target="_blank" href="https://github.com/nandk4552/timetable" class="btn btn-sm btn-outline-warning social-count text-muted"><i class="fas text-muted fa-star mx-1"></i>Star</a>
-                    <a target="_blank" href="https://github.com/nandk4552/timetable" class="btn btn-sm btn-outline-warning text-muted social-count">2</a>
+                    <a target="_blank" href="https://github.com/nandk4552/timetable" class="btn btn-sm btn-outline-warning text-muted social-count">3
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                          </span>
+                    </a>
                 </div>
             </div>
 
@@ -441,14 +445,59 @@
     </div>
     <!-- card ends -->
 
+
+    <!-- model paper secion starts -->
+    <div class="container my-3">
+        <div class="alert alert-light" role="alert">
+            <h2 class="py-3 display-5 alert-heading under text-center">Model Papers </h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item my-2">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Midterm Exam Papers
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-black">Mid-1 Papers</h5>
+                                            <p class="fst-italic card-text text-muted">The Below link contains previous mid-1 exam papers for all subjects</p>
+                                            <a target="_blank" href="https://drive.google.com/file/d/1-4UENBmmkBuhpgM4OhEpVRxPg_xEJn3B/view?usp=sharing" class="btn btn-sm btn-primary"> click here to download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-black">Mid-2 Papers</h5>
+                                            <p class="card-text text-muted fst-italic">The Below link contains all the subjects mid-2 exam papers</p>
+                                            <a tabindex="0" class="btn btn-sm btn-primary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="mid-2 varak agandi prends">click here to download</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- model paper secion ends -->
+
     <!-- card starts -->
     <div class="container-fluid">
         <h2 class="py-3 display-5 under text-center">Contact me</h2>
         <div class="w-100">
-            <iframe class="my-3 w-100" src="https://docs.google.com/forms/d/e/1FAIpQLScvDsk7GM8gzxwpdDdFjW0E9_Ih-H685GvYfzC5ulg4kLKb6Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe class="my-3 w-100" width="640" height="930" src="https://docs.google.com/forms/d/e/1FAIpQLScvDsk7GM8gzxwpdDdFjW0E9_Ih-H685GvYfzC5ulg4kLKb6Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
     <!-- card ends -->
+
 
     <!-- footer section starts -->
     <div class="container-fluid bg-dark py-1 mt-5">
@@ -476,6 +525,15 @@
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+        var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+            trigger: 'focus'
         })
     </script>
 

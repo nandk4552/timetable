@@ -6,6 +6,7 @@
 }
 
 :root {
+    --yellow: #ffc107;
     --purple: #8e44ad;
     --red: #c0392b;
     --orange: #f39c12;
@@ -130,8 +131,12 @@
     transform: translateY(58px);
 }
 
-nav .navbar a {
-    color: var(--purple) !important;
+nav div ul li a:hover {
+    color: var(--yellow) !important;
+}
+
+footer .copyright {
+    font-size: 1rem !important;
 }
 
 .social-count {
@@ -195,9 +200,55 @@ nav .navbar a {
     border: var(--border) !important;
 }
 
-@media (max-width:660px) {
+
+/* @media (max-width:660px) {
     .big-banner {
         width: 100%;
         height: 400px;
+    }
+} */
+
+
+/* media queries  */
+
+
+/* @media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+} */
+
+
+/* 
+@media (max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .flex .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .flex .navbar a {
+        margin: 2rem;
+        display: block;
+    }
+} */
+
+@media (max-width:450px) {
+    .big-banner {
+        width: 100%;
+        height: 400px;
+    }
+    footer .copyright {
+        font-size: .9rem !important;
     }
 }

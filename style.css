@@ -463,11 +463,15 @@
     
     .about-me .box-container .box h3 {
         color: var(--black);
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         text-transform: capitalize;
-        padding: 1rem;
-        box-shadow: var(--box-shadow);
-        background-color: var(--white);
+        padding-top: .5rem;
+        text-align: center;
+        background-color: var(--white) !important;
+    }
+    
+    .about-web .bg-light {
+        border: var(--border);
     }
     /* @media (max-width:660px) {
     .big-banner {

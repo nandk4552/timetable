@@ -59,7 +59,7 @@
                         <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="sem-1.html">Semesters</a>
+                        <a class="nav-link active" aria-current="page" href="sem-1.html">Semester-1</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -71,36 +71,47 @@
     </nav>
     <!-- navbar section ends -->
 
-
-
-
-
     <!-- off canvas starts -->
-    <div class="offcanvas offcanvas-end d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="" width="25px" /></a>
-            <h5 id="offcanvasRightLabel">Information Technology</h5>
-            <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <section class="side-bar">
+
+        <div class="offcanvas offcanvas-end d-flex flex-column flex-shrink-0 p-1 text-dark bg-dark" style="width: 280px; background-color: var(--light-bg)!important;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <a class="navbar-brand" href="/"><img src="images/logo.png" alt="" width="25px" /></a>
+                <h5 id="offcanvasRightLabel">Information Technology</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+            </div>
+            <div class="offcanvas-body">
+
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link" aria-current="page">
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-white">
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-white">
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sem-1.html" class="nav-link text-white">
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> Semester-1
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
         </div>
-        <div class="offcanvas-body">
+    </section>
 
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="/" class="nav-link active" aria-current="page">
-                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg> Home
-                    </a>
-                </li>
-                <li>
-                    <a href="/about.html" class="nav-link text-white">
-                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> About Us
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-    </div>
-    </div>
     <!-- off canvas ends -->
 
     <!-- bg image ends -->
@@ -108,7 +119,7 @@
     <div class="bg-dark banner me-md-3 pt-3 pb-5 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden w-100" style="backdrop-filter: blur(15px) !important;">
         <div class="my-3 pt-5">
             <h2 class="display-5 text-uppercase">Information Technology</h2>
-            <p class="lead">Section B ( Semester-II )</p>
+            <p class="lead">Section B ( Semester-2.0 )</p>
         </div>
 
 
@@ -148,7 +159,7 @@
 
 
     <!-- contact section starts -->
-    <div class="container-fluid  overflow-hidden">
+    <div class="container-fluid  overflow-hidden ">
         <h2 class="py-3 display-5 under text-center">Contact me</h2>
         <div class="w-100 overflow-hidden">
             <iframe class="my-3 w-100 overflow-hidden" width="640" height="930" src="https://docs.google.com/forms/d/e/1FAIpQLScvDsk7GM8gzxwpdDdFjW0E9_Ih-H685GvYfzC5ulg4kLKb6Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -157,18 +168,21 @@
     <!-- contact section ends -->
 
 
-
     <!-- footer section starts -->
-    <div class="container-fluid bg-dark py-1 mt-5">
+    <section class="footer">
         <footer>
-            <ul class="nav  justify-content-center  border-bottom pb-2 mb-2">
+            <ul class="nav  justify-content-center">
                 <li class="nav-item "><a href="/" class="nav-link px-2 text-light">Home</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link px-2 text-light">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-light">Contact</a></li>
+                <li class="nav-item"><a href="sem-1.html" class="nav-link px-2 text-light">Semester-1</a></li>
             </ul>
+            <hr class="pt-0 mt-0">
             <p class="text-light copyright fw-bold text-center fst-italic"><em>***All the Notes and Materials used in this website for educational purpose only not to promote ourself</em></p>
             <h6 class="text-center text-light fs-6 fw-normal">© 2022 IT Section-B | Created By <i class="fas fa-heart text-danger"></i> <a target="_blank" href="https://www.linkedin.com/in/nand-kishore-809880172/" class="text-decoration-underline text-light fs-6"> NAND KISHORE</a></h6>
         </footer>
-    </div>
+    </section>
+
     <!-- footer section ends -->
 
 

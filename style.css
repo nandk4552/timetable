@@ -473,6 +473,19 @@
     .about-web .bg-light {
         border: var(--border);
     }
+    
+    .syllabus .title {
+        font-size: 2.5rem !important;
+    }
+    
+    .syllabus .card {
+        border: var(--border);
+        box-shadow: var(--box-shadow);
+    }
+    
+    .syllabus .card .card-header {
+        background-color: var(--light-bg);
+    }
     /* @media (max-width:660px) {
     .big-banner {
         width: 100%;
@@ -598,5 +611,13 @@
             width: 2.5rem;
             line-height: 2.5rem;
             font-size: 1.2rem;
+        }
+        .syllabus .title {
+            font-size: 1.8rem !important;
+            font-weight: 600 !important;
+            text-transform: capitalize !important;
+        }
+        .contact-sec iframe form div * {
+            resize: none !important;
         }
     }

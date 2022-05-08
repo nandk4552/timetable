@@ -41,10 +41,12 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
     <!-- navbar section starts -->
     <nav class="navbar navbar-expand-md fixed-top navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand p-0" href="/"><img src="images/logo.png" alt="" width="40px" /></a>
+
             <button class="navbar-toggler" style="color: transparent; border-color: transparent;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
             </button>
@@ -458,20 +460,14 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bee" aria-expanded="false" aria-controls="bee">
-          PHY LAB 
+          PHY LAB <span class="badge bg-warning text-dark shadow-lg mx-2">New *</span>
         </button>
                 </h2>
                 <div id="bee" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="my-3">
-                            <h6>Machines Lab</h6>
-                            <a target="_blank" class="disabled p-btn btn-sm btn-primary" style="text-decoration: none;" href="#" disabled>
-                click here</a>
-                        </div>
-
-                        <div class="my-3">
-                            <h6>Circuits Lab</h6>
-                            <a target="_blank" class="disabled p-btn btn-sm btn-primary" style="text-decoration: none;" href="#">
+                            <h6>12 experiments</h6>
+                            <a target="_blank" class=" p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://bit.ly/3KTCEqb">
                 click here</a>
                         </div>
                     </div>
@@ -690,6 +686,9 @@
     <!-- footer section ends -->
 
 
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -714,7 +713,12 @@
             trigger: 'focus'
         })
     </script>
-
+    <script>
+        let menutoggle = document.querySelector('.toggle');
+        menutoggle.onclick = function() {
+            menutoggle.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

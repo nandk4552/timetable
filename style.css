@@ -48,6 +48,68 @@
     *::-webkit-scrollbar-thumb {
         background-color: var(--purple);
     }
+    /* toggle */
+    
+    #preloader {
+        background: var(--white) url(images/loader/p-p.gif) no-repeat center center;
+        background-size: 30%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 10000;
+        animation-delay: .2s linear;
+    }
+    
+    .toggle {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    .toggle span {
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: #1863ff;
+        border-radius: 4px;
+        transition: 0.5s;
+    }
+    
+    .toggle span:nth-child(1) {
+        transform: translateY(-15px);
+        width: 25px;
+        left: 15px;
+    }
+    
+    .toggle.active span:nth-child(1) {
+        width: 40px;
+        transform: translateY(0px) rotate(45deg);
+        transition-delay: 0.125s;
+    }
+    
+    .toggle span:nth-child(2) {
+        transform: translateY(15px);
+        width: 15px;
+        left: 15px;
+    }
+    
+    .toggle.active span:nth-child(2) {
+        width: 40px;
+        transform: translateY(0px) rotate(315deg);
+        transition-delay: 0.25;
+    }
+    
+    .toggle.active span:nth-child(3) {
+        transform: translateX(60px);
+    }
     
     .p-alert {
         color: var(--purple);

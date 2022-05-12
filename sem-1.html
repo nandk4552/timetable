@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -22,19 +23,29 @@
             text-align: center !important;
             font-size: 1rem;
         }
-        
+
         .g-btn {
             background-color: #25D366 !important;
             color: #fff !important;
             outline: none !important;
             border: none !important;
         }
-        
+
         .g-btn {
             opacity: 0.9;
         }
     </style>
     <link rel="stylesheet" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-228642984-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-228642984-1');
+    </script>
 
 
 </head>
@@ -46,8 +57,9 @@
     <nav class="navbar navbar-expand-md fixed-top navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="/"><img src="images/logo.png" alt="" width="40px" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -76,34 +88,44 @@
     <!-- off canvas starts -->
     <section class="side-bar">
 
-        <div class="offcanvas offcanvas-end d-flex flex-column flex-shrink-0 p-1 text-dark bg-dark" style="width: 280px; background-color: var(--light-bg)!important;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas offcanvas-end d-flex flex-column flex-shrink-0 p-1 text-dark bg-dark"
+            style="width: 280px; background-color: var(--light-bg)!important;" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
                 <a class="navbar-brand" href="/"><img src="images/logo.png" alt="" width="40px" /></a>
                 <h5 id="offcanvasRightLabel">Information Technology</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-            </button>
+                </button>
             </div>
             <div class="offcanvas-body">
 
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
                         <a href="/" class="nav-link" aria-current="page">
-                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg> Home
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="#home"></use>
+                            </svg> Home
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link text-white">
-                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> About
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg> About
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link text-white">
-                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> Contact
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg> Contact
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="sem-1.html" class="nav-link text-white">
-                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg> Semesters
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg> Semesters
                         </a>
                     </li>
 
@@ -118,7 +140,8 @@
 
     <!-- bg image ends -->
 
-    <div class="bg-dark banner me-md-3 pt-3 pb-5 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden w-100" style="backdrop-filter: blur(15px) !important;">
+    <div class="bg-dark banner me-md-3 pt-3 pb-5 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden w-100"
+        style="backdrop-filter: blur(15px) !important;">
         <div class="my-3 pt-5">
             <h2 class="display-5">Information Technology</h2>
             <p class="lead">Section B ( Semester-I )</p>
@@ -131,16 +154,21 @@
 
         </div>
         <p class="m-0">
-            <small class="text-light fw-bold m-1 fst-italic" style="font-size: 10px;">**Give a Star to Support Us</small></p>
+            <small class="text-light fw-bold m-1 fst-italic" style="font-size: 10px;">**Give a Star to Support
+                Us</small>
+        </p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <div>
 
                 <div class="btn-group btn-group-sm shadow-lg mt-0" role="group" aria-label="...">
-                    <a target="_blank" href="https://github.com/nandk4552/timetable" class="btn btn-sm btn-outline-warning social-count text-muted"><i class="fas text-muted fa-star mx-1"></i>Star</a>
-                    <a target="_blank" href="https://github.com/nandk4552/timetable" class="btn btn-sm btn-outline-warning text-muted social-count">3
+                    <a target="_blank" href="https://github.com/nandk4552/timetable"
+                        class="btn btn-sm btn-outline-warning social-count text-muted"><i
+                            class="fas text-muted fa-star mx-1"></i>Star</a>
+                    <a target="_blank" href="https://github.com/nandk4552/timetable"
+                        class="btn btn-sm btn-outline-warning text-muted social-count">3
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             3
-                          </span>
+                        </span>
                     </a>
                 </div>
             </div>
@@ -154,7 +182,8 @@
 
     <!-- alert starts -->
     <div class="p-alert mb-3 alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Special Thanks!</strong> To Every classmate and faculty for sharing the notes. <a target="_blank" href="https://www.linkedin.com/in/nand-kishore-809880172/" class="alert-link">contact me</a>
+        <strong>Special Thanks!</strong> To Every classmate and faculty for sharing the notes. <a target="_blank"
+            href="https://www.linkedin.com/in/nand-kishore-809880172/" class="alert-link">contact me</a>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     <!-- alert ends -->
@@ -250,34 +279,45 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h1 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
 
-            BEE Notes
-          </button>
+                            BEE Notes
+                        </button>
                     </h1>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
 
                         <div class="accordion-body">
                             <div>
                                 <h1>Bee Notes</h1>
                                 <div>
                                     <h6>UNIT 1</h6>
-                                    <a target="_blank" class="btn-sm btn-primary p-btn me-2" style="text-decoration: none;" href="https://drive.google.com/file/d/1Qi-BTAsVKuQsw20zIiZgJXEFwDJkrQbO/view?usp=sharing"> Introdution
-                  to Electrical Engineering (Part-1) </a>
+                                    <a target="_blank" class="btn-sm btn-primary p-btn me-2"
+                                        style="text-decoration: none;"
+                                        href="https://drive.google.com/file/d/1Qi-BTAsVKuQsw20zIiZgJXEFwDJkrQbO/view?usp=sharing">
+                                        Introdution
+                                        to Electrical Engineering (Part-1) </a>
 
-                                    <a target="_blank" class="btn-sm btn-primary p-btn " style="text-decoration: none;" href="https://drive.google.com/file/d/1QmZ3iEWbW5L2ls0A0cGxllQJoLvIr1jr/view?usp=sharing"> Introdution
-                  to Electrical Engineering (Part-2) </a>
+                                    <a target="_blank" class="btn-sm btn-primary p-btn " style="text-decoration: none;"
+                                        href="https://drive.google.com/file/d/1QmZ3iEWbW5L2ls0A0cGxllQJoLvIr1jr/view?usp=sharing">
+                                        Introdution
+                                        to Electrical Engineering (Part-2) </a>
                                 </div>
                                 <div class="my-3">
                                     <h6>UNIT 2</h6>
-                                    <a target="_blank" class="btn-sm btn-primary p-btn" style="text-decoration: none;" href="https://drive.google.com/file/d/1QWIb4mxDnOBpo3b_NmJ6nBGMy81RxeXr/view?usp=sharing">2. Alternating
-                  Quantites</a>
+                                    <a target="_blank" class="btn-sm btn-primary p-btn" style="text-decoration: none;"
+                                        href="https://drive.google.com/file/d/1QWIb4mxDnOBpo3b_NmJ6nBGMy81RxeXr/view?usp=sharing">2.
+                                        Alternating
+                                        Quantites</a>
                                 </div>
                                 <div class="my-3">
                                     <h6>UNIT 3</h6>
-                                    <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1mFr2COzxp3uoUDzoX1SIvbWX_SX-jJZv/view?usp=sharing"> 3. Magenetic Circuits *
-                                   
-                                </a>
+                                    <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                        href="https://drive.google.com/file/d/1mFr2COzxp3uoUDzoX1SIvbWX_SX-jJZv/view?usp=sharing">
+                                        3. Magenetic Circuits *
+
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -286,47 +326,66 @@
 
                 <div class="accordion-item">
                     <h1 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Chemistry Notes
-          </button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Chemistry Notes
+                        </button>
                     </h1>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div>
                                 <h1>Chemistry Notes</h1>
                                 <div class="my-3">
                                     <h6>UNIT 1</h6>
-                                    <a target="_blank" class="btn-sm btn-primary p-btn" style="text-decoration: none;" href="https://drive.google.com/file/d/1QP29vgBAc0CQ8YPkiS9cgDXRNu0a2E2A/view?usp=sharing">Atoms and
-                  Molecular
-                  structures</a>
+                                    <a target="_blank" class="btn-sm btn-primary p-btn" style="text-decoration: none;"
+                                        href="https://drive.google.com/file/d/1QP29vgBAc0CQ8YPkiS9cgDXRNu0a2E2A/view?usp=sharing">Atoms
+                                        and
+                                        Molecular
+                                        structures</a>
                                 </div>
                                 <div class="my-3">
                                     <h6>UNIT 2</h6>
-                                    <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1jqx3R0ePq7-EMPM9KlzBp2YGkkchyDSN/view?usp=sharing">Water
-                  Technology</a>
+                                    <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                        href="https://drive.google.com/file/d/1jqx3R0ePq7-EMPM9KlzBp2YGkkchyDSN/view?usp=sharing">Water
+                                        Technology</a>
                                 </div>
 
                                 <div class="my-3">
                                     <h6>UNIT 3</h6>
                                     <div>
-                                        <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1mWtpD4x8OHkXQ6yMi85ctLy3AzIXOCQT/view?usp=sharing">part-1 Electro-chemistry *</a>
+                                        <a target="_blank" class="p-btn btn-sm btn-primary"
+                                            style="text-decoration: none;"
+                                            href="https://drive.google.com/file/d/1mWtpD4x8OHkXQ6yMi85ctLy3AzIXOCQT/view?usp=sharing">part-1
+                                            Electro-chemistry *</a>
                                         <a target="_blank" class="p-btn 
-                                        ms-1 btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1met3jSi0i7ghRfEgHMbQmgd6acG1qARB/view?usp=sharing">part-2 Corrosion *</a>
+                                        ms-1 btn-sm btn-primary" style="text-decoration: none;"
+                                            href="https://drive.google.com/file/d/1met3jSi0i7ghRfEgHMbQmgd6acG1qARB/view?usp=sharing">part-2
+                                            Corrosion *</a>
                                     </div>
                                 </div>
 
                                 <div class="my-3">
                                     <h6>UNIT 4</h6>
                                     <div>
-                                        <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1USFOhIyTDeyvZENIkyZQm_2agCCD_dwc/view?usp=sharing">part-1 Stereo-chemistry *</a>
-                                        <a target="_blank" class="p-btn ms-1 btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1U_3P5flQnC1lsRuR4zbmVLUPQEfwngD4/view?usp=sharing">part-2 Organic Chemistry *</a>
+                                        <a target="_blank" class="p-btn btn-sm btn-primary"
+                                            style="text-decoration: none;"
+                                            href="https://drive.google.com/file/d/1USFOhIyTDeyvZENIkyZQm_2agCCD_dwc/view?usp=sharing">part-1
+                                            Stereo-chemistry *</a>
+                                        <a target="_blank" class="p-btn ms-1 btn-sm btn-primary"
+                                            style="text-decoration: none;"
+                                            href="https://drive.google.com/file/d/1U_3P5flQnC1lsRuR4zbmVLUPQEfwngD4/view?usp=sharing">part-2
+                                            Organic Chemistry *</a>
                                     </div>
                                 </div>
 
                                 <div class="my-3">
                                     <h6>UNIT 5</h6>
                                     <div>
-                                        <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1bmNBWekLoKdTtnULAod-pTeTOCAl9Qej/view?usp=sharing">Polymer Chemistry*</a>
+                                        <a target="_blank" class="p-btn btn-sm btn-primary"
+                                            style="text-decoration: none;"
+                                            href="https://drive.google.com/file/d/1bmNBWekLoKdTtnULAod-pTeTOCAl9Qej/view?usp=sharing">Polymer
+                                            Chemistry*</a>
                                     </div>
                                 </div>
 
@@ -338,40 +397,48 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Maths Notes
-        </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Maths Notes
+                    </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="my-3">
                             <h6>UNIT 1</h6>
-                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1ljrt7aDJYim3eKEz2tN5f7N3TYhZIzik/view?usp=sharing">
-                            Matrices and linear system of equations</a>
+                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1ljrt7aDJYim3eKEz2tN5f7N3TYhZIzik/view?usp=sharing">
+                                Matrices and linear system of equations</a>
                         </div>
                         <div class="my-3">
                             <h6>UNIT 2</h6>
-                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1ZMW5mP4f0e999dAnrLLoJ0OHnwBHyIxC/view?usp=sharing">
-                            Eigen Values and Eigen Vector</a>
+                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1ZMW5mP4f0e999dAnrLLoJ0OHnwBHyIxC/view?usp=sharing">
+                                Eigen Values and Eigen Vector</a>
                         </div>
                         <div class="my-3">
                             <h6>UNIT 3 <span class="text-muted">*</span> </h6>
-                            <a target="z_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1hjWOFif29ytKN1_d8jf9SF1fsB3Jxr6H/view?usp=sharing">
-                            Sequences and series </a>
+                            <a target="z_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1hjWOFif29ytKN1_d8jf9SF1fsB3Jxr6H/view?usp=sharing">
+                                Sequences and series </a>
                         </div>
 
                         <div class="my-3">
                             <h6>UNIT 4 <span class="text-muted">*</span> </h6>
-                            <a target="z_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1cfc17fK3VSzF5F2jpsu-lb3vQpJ6R9S9/view?usp=sharing">
-                        part-1 Beta Gamma </a>
-                            <a target="z_blank" class="p-btn mx-2 btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1ci_smcypkr6SfsQRnfa3aU7TY92bVaRT/view?usp=sharing">
-                            part-2 Mean Value Theorems</a>
+                            <a target="z_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1cfc17fK3VSzF5F2jpsu-lb3vQpJ6R9S9/view?usp=sharing">
+                                part-1 Beta Gamma </a>
+                            <a target="z_blank" class="p-btn mx-2 btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1ci_smcypkr6SfsQRnfa3aU7TY92bVaRT/view?usp=sharing">
+                                part-2 Mean Value Theorems</a>
                         </div>
 
                         <div class="my-3">
                             <h6>UNIT 5 <span class="text-muted">*</span> </h6>
-                            <a target="z_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1cSS1NGfDLa4vkgXR-2NeiqT5bnferFwj/view?usp=sharing">
-                            Functions and several variables </a>
+                            <a target="z_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1cSS1NGfDLa4vkgXR-2NeiqT5bnferFwj/view?usp=sharing">
+                                Functions and several variables </a>
                         </div>
 
                     </div>
@@ -381,28 +448,33 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-          PPS-1 Notes
-        </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        PPS-1 Notes
+                    </button>
                 </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="my-3">
                             <h6>UNIT 1,2 & 3</h6>
-                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1RZs-fw-tuYCnyLZv8j3kg0QjYs_b9LNB/view?usp=sharing">
-              Unit 1, 2 & 3*</a>
+                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1RZs-fw-tuYCnyLZv8j3kg0QjYs_b9LNB/view?usp=sharing">
+                                Unit 1, 2 & 3*</a>
                         </div>
 
                         <div class="my-3">
                             <h6>UNIT 4</h6>
-                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1Ud6j_7jUWJRJLEwbMHLscG1x56RrU7yT/view?usp=sharing">
-              Functions*</a>
+                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1Ud6j_7jUWJRJLEwbMHLscG1x56RrU7yT/view?usp=sharing">
+                                Functions*</a>
                         </div>
 
                         <div class="my-3">
                             <h6>UNIT 5</h6>
-                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1UfbSOFVQk3c5hlbE6BmvOK9wq2oUCzqp/view?usp=sharing">
-              Arrays*</a>
+                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1UfbSOFVQk3c5hlbE6BmvOK9wq2oUCzqp/view?usp=sharing">
+                                Arrays*</a>
                         </div>
                     </div>
                 </div>
@@ -410,16 +482,19 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          ELS Record 
-        </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ELS Record
+                    </button>
                 </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="my-3">
                             <h6>UNIT 1,2 & 3</h6>
-                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://docs.google.com/document/d/148JFu7237x94LcymZJjyix8czByQeXDo/edit?usp=sharing&ouid=111345772728066355409&rtpof=true&sd=true">
-              Unit 1, 2 & 3</a>
+                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://docs.google.com/document/d/148JFu7237x94LcymZJjyix8czByQeXDo/edit?usp=sharing&ouid=111345772728066355409&rtpof=true&sd=true">
+                                Unit 1, 2 & 3</a>
                         </div>
                     </div>
                 </div>
@@ -427,16 +502,19 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          EWS WorkShop Record 
-        </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        EWS WorkShop Record
+                    </button>
                 </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="my-3">
                             <h6>Trades 1,2,3,4,5 & 6</h6>
-                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1BGhqkws5hM0u8K7YsWdtcR3lSj63_Fsm/view?usp=sharing">
-                            Trades 1,2,3,4,5 & 6</a>
+                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1BGhqkws5hM0u8K7YsWdtcR3lSj63_Fsm/view?usp=sharing">
+                                Trades 1,2,3,4,5 & 6</a>
                         </div>
                     </div>
                 </div>
@@ -444,22 +522,26 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bee" aria-expanded="false" aria-controls="bee">
-          BEE Lab 
-        </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#bee" aria-expanded="false" aria-controls="bee">
+                        BEE Lab
+                    </button>
                 </h2>
-                <div id="bee" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div id="bee" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="my-3">
                             <h6>Machines Lab</h6>
-                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1zX3w_s1opo0GIQgsTtChaTS41Z3M1zic/view?usp=sharing">
-                click here</a>
+                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1zX3w_s1opo0GIQgsTtChaTS41Z3M1zic/view?usp=sharing">
+                                click here</a>
                         </div>
 
                         <div class="my-3">
                             <h6>Circuits Lab</h6>
-                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;" href="https://drive.google.com/file/d/1bqCAUDlfqDnZzohorzwPc1wu3bMtOkeK/view?usp=sharing">
-                click here</a>
+                            <a target="_blank" class="p-btn btn-sm btn-primary" style="text-decoration: none;"
+                                href="https://drive.google.com/file/d/1bqCAUDlfqDnZzohorzwPc1wu3bMtOkeK/view?usp=sharing">
+                                click here</a>
                         </div>
                     </div>
                 </div>
@@ -482,8 +564,12 @@
                         <div class="card-body">
                             <h5 class="card-title">BEE Question Bank </h5>
 
-                            <a target="_blank" href="https://drive.google.com/file/d/1MO4mUj_aOdM7wEn2HAw7pBaR67SwJtsA/view?usp=sharing" class="p-btn btn btn-sm btn-primary">Questions</a>
-                            <a target="_blank" href="https://drive.google.com/file/d/19hwfaKWB6CKpFnqKyS3Cgv5MxXWdBQZ4/view?usp=sharing" class="option-btn btn btn-sm btn-primary">Answers</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1MO4mUj_aOdM7wEn2HAw7pBaR67SwJtsA/view?usp=sharing"
+                                class="p-btn btn btn-sm btn-primary">Questions</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/19hwfaKWB6CKpFnqKyS3Cgv5MxXWdBQZ4/view?usp=sharing"
+                                class="option-btn btn btn-sm btn-primary">Answers</a>
                         </div>
                     </div>
                 </div>
@@ -492,8 +578,12 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Chemistry Qn Bank </h5>
-                            <a target="_blank" href="https://drive.google.com/file/d/1UNjGA-N_bIqUi_xCNTCnxoyZeA0Pp_2E/view?usp=sharing" class="p-btn btn btn-sm btn-primary">Questions</a>
-                            <a target="_blank" href="https://drive.google.com/file/d/1TQiZQ4htLFbruMHaVKUXACyrn6zLuESp/view?usp=sharing" class="option-btn btn btn-sm btn-primary">Answers</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1UNjGA-N_bIqUi_xCNTCnxoyZeA0Pp_2E/view?usp=sharing"
+                                class="p-btn btn btn-sm btn-primary">Questions</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1TQiZQ4htLFbruMHaVKUXACyrn6zLuESp/view?usp=sharing"
+                                class="option-btn btn btn-sm btn-primary">Answers</a>
 
                         </div>
                     </div>
@@ -507,13 +597,25 @@
                         <div class="card-body">
                             <h5 class="card-title">PPS-I Question Bank </h5>
 
-                            <a target="_blank" href="https://drive.google.com/file/d/1W0lgN3vhTbmSHozN3sdJgrt-UD_O7W6B/view?usp=sharing" class="p-btn btn btn-sm  btn-primary">Questions</a>
-                            <a target="_blank" href="https://drive.google.com/file/d/1MM-cQEmoJgidvHcsYDBMR2i4D-519iAP/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-1</a>
-                            <a target="_blank" href="https://drive.google.com/file/d/1iXnZ-pLYjdrSRcC7losAHzsbgO4BarTk/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-2</a>
-                            <a target="_blank" href="https://drive.google.com/file/d/1vcKVQuXdEFfVsik7YI-Kxj5VNuDM2kDX/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-3</a>
-                            <a target="_blank" href="https://drive.google.com/file/d/1UiWRU3d91yBhMOoH1q4GX8FhTIxuxBzu/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-3 programs</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1W0lgN3vhTbmSHozN3sdJgrt-UD_O7W6B/view?usp=sharing"
+                                class="p-btn btn btn-sm  btn-primary">Questions</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1MM-cQEmoJgidvHcsYDBMR2i4D-519iAP/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-1</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1iXnZ-pLYjdrSRcC7losAHzsbgO4BarTk/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-2</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1vcKVQuXdEFfVsik7YI-Kxj5VNuDM2kDX/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-3</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1UiWRU3d91yBhMOoH1q4GX8FhTIxuxBzu/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-3 programs</a>
 
-                            <a target="_blank" href="https://drive.google.com/file/d/1c09vGzLuqcCus8V6QXas0zzdHX_F_8ec/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-4</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1c09vGzLuqcCus8V6QXas0zzdHX_F_8ec/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-4</a>
 
                         </div>
                     </div>
@@ -524,16 +626,30 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">M-I Question Bank </h5>
-                            <a target="_blank" href="https://drive.google.com/file/d/1liLSLGpbeqAzhEKqQH375VcslR40gRW8/view?usp=sharing" class="p-btn btn btn-sm btn-primary ">Questions</a>
-                            <a target="_blank" href="https://drive.google.com/file/d/1f0_QaLh48XIPor8uvVYaJXmaX2mLrILy/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-1&2</a>
-                            <a target="_blank" href="https://drive.google.com/file/d/1Aio36Xjnz09g0dd-rWQT_xMDl0lQquif/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-2 LAQs</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1liLSLGpbeqAzhEKqQH375VcslR40gRW8/view?usp=sharing"
+                                class="p-btn btn btn-sm btn-primary ">Questions</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1f0_QaLh48XIPor8uvVYaJXmaX2mLrILy/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-1&2</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1Aio36Xjnz09g0dd-rWQT_xMDl0lQquif/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-2 LAQs</a>
 
-                            <a target="_blank" href="https://drive.google.com/file/d/1NWE2zJdRb7yYNIw--F2geN9rRwY4RMNA/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-3 
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1NWE2zJdRb7yYNIw--F2geN9rRwY4RMNA/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-3
                             </a>
 
-                            <a target="_blank" href="https://drive.google.com/file/d/1U4Ryzno3-EWVIMzrIEfDURln6B0E7HS-/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-4 </a>
-                            <a target="_blank" href="https://drive.google.com/file/d/1bwK57VTHGWrOAnt1unDf5H7ADYEJMfG1/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-5 </a> or
-                            <a target="_blank" href="https://drive.google.com/file/d/1clyN4UV3cL3VGHjtiJspaEZL2tOe70ur/view?usp=sharing" class="option-btn btn btn-sm  btn-primary">unit-3,4,5 QB </a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1U4Ryzno3-EWVIMzrIEfDURln6B0E7HS-/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-4 </a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1bwK57VTHGWrOAnt1unDf5H7ADYEJMfG1/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-5 </a> or
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1clyN4UV3cL3VGHjtiJspaEZL2tOe70ur/view?usp=sharing"
+                                class="option-btn btn btn-sm  btn-primary">unit-3,4,5 QB </a>
 
                         </div>
                     </div>
@@ -555,19 +671,24 @@
                 <div class="accordion my-4" id="accordionExample">
                     <div class="accordion-item my-2">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Midterm Exam Papers
-                    </button>
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Midterm Exam Papers
+                            </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h5 class="card-title text-black">Mid-1 Papers</h5>
-                                                <p class="fst-italic card-text fw-bold text-muted">The Below link contains previous mid-1 exam papers for all subjects</p>
-                                                <a target="_blank" href="https://drive.google.com/file/d/1-4UENBmmkBuhpgM4OhEpVRxPg_xEJn3B/view?usp=sharing" class="p-btn btn btn-sm btn-primary"> click here to download</a>
+                                                <p class="fst-italic card-text fw-bold text-muted">The Below link
+                                                    contains previous mid-1 exam papers for all subjects</p>
+                                                <a target="_blank"
+                                                    href="https://drive.google.com/file/d/1-4UENBmmkBuhpgM4OhEpVRxPg_xEJn3B/view?usp=sharing"
+                                                    class="p-btn btn btn-sm btn-primary"> click here to download</a>
                                             </div>
                                         </div>
                                     </div>
@@ -575,8 +696,11 @@
                                         <div class="card">
                                             <div class="card-body">
                                                 <h5 class="card-title text-black">Mid-2 Papers</h5>
-                                                <p class="card-text fw-bold text-muted fst-italic">The Below link contains all the subjects mid-2 exam papers</p>
-                                                <a target="_blank" href="https://drive.google.com/file/d/1bagrvc4E1yUhFxtQecYyfQR6_y8qmaHq/view?usp=sharing" class="p-btn btn btn-sm btn-primary"> click here to download</a>
+                                                <p class="card-text fw-bold text-muted fst-italic">The Below link
+                                                    contains all the subjects mid-2 exam papers</p>
+                                                <a target="_blank"
+                                                    href="https://drive.google.com/file/d/1bagrvc4E1yUhFxtQecYyfQR6_y8qmaHq/view?usp=sharing"
+                                                    class="p-btn btn btn-sm btn-primary"> click here to download</a>
 
                                             </div>
                                         </div>
@@ -588,8 +712,11 @@
                                         <div class="card">
                                             <div class="card-body">
                                                 <h5 class="card-title text-black">Mid-3 Papers</h5>
-                                                <p class="fst-italic fw-bold card-text text-muted">The Below link contains previous mid-3 exam papers for all subjects</p>
-                                                <a target="_blank" href="#" class="p-btn btn btn-sm btn-primary disabled"> click here to download</a>
+                                                <p class="fst-italic fw-bold card-text text-muted">The Below link
+                                                    contains previous mid-3 exam papers for all subjects</p>
+                                                <a target="_blank" href="#"
+                                                    class="p-btn btn btn-sm btn-primary disabled"> click here to
+                                                    download</a>
                                             </div>
                                         </div>
                                     </div>
@@ -605,19 +732,26 @@
                 <div class="accordion my-4" id="accordionExample">
                     <div class="accordion-item my-2">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSem" aria-expanded="true" aria-controls="collapseSem">
-                      Semester Exam Papers<span class="badge bg-warning text-dark shadow-lg mx-2">New *</span>
-                    </button>
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSem" aria-expanded="true" aria-controls="collapseSem">
+                                Semester Exam Papers<span class="badge bg-warning text-dark shadow-lg mx-2">New *</span>
+                            </button>
                         </h2>
-                        <div id="collapseSem" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseSem" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h5 class="card-title text-black">Sem-I Papers</h5>
-                                                <p class="card-text text-muted fw-bold fst-italic">The Below link contains all the subjects <span class="text-dark fw-bold text-decoration-underline">semester</span> exam papers</p>
-                                                <a target="_blank" href="https://drive.google.com/file/d/1hBYewddiBNUv4-QunnaUAAWD9mNgT1zE/view?usp=sharing" class="p-btn btn btn-sm btn-primary"> click here to download</a>
+                                                <p class="card-text text-muted fw-bold fst-italic">The Below link
+                                                    contains all the subjects <span
+                                                        class="text-dark fw-bold text-decoration-underline">semester</span>
+                                                    exam papers</p>
+                                                <a target="_blank"
+                                                    href="https://drive.google.com/file/d/1hBYewddiBNUv4-QunnaUAAWD9mNgT1zE/view?usp=sharing"
+                                                    class="p-btn btn btn-sm btn-primary"> click here to download</a>
 
                                             </div>
                                         </div>
@@ -640,7 +774,8 @@
     <section class="home-contact">
         <div class="content">
             <h3>have any questions?</h3>
-            <p>Do you have any queries, any suggestions feel free to contact me <br>I'm going to resolve your issue as soon as possible</p>
+            <p>Do you have any queries, any suggestions feel free to contact me <br>I'm going to resolve your issue as
+                soon as possible</p>
             <a href="contact.html" class="white-btn btn">contact us</a>
         </div>
     </section>
@@ -655,8 +790,12 @@
                 <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-light">Contact</a></li>
             </ul>
             <hr class="pt-0 mt-0">
-            <p class="text-light copyright fw-bold text-center fst-italic"><em>***All the Notes and Materials used in this website for educational purpose only not to promote ourself</em></p>
-            <h6 class="text-center text-light fs-6 fw-normal">© 2022 IT Section-B | Created By <i class="fas fa-heart text-danger"></i> <a target="_blank" href="https://www.linkedin.com/in/nand-kishore-809880172/" class="text-decoration-underline text-light fs-6"> NAND KISHORE</a></h6>
+            <p class="text-light copyright fw-bold text-center fst-italic"><em>***All the Notes and Materials used in
+                    this website for educational purpose only not to promote ourself</em></p>
+            <h6 class="text-center text-light fs-6 fw-normal">© 2022 IT Section-B | Created By <i
+                    class="fas fa-heart text-danger"></i> <a target="_blank"
+                    href="https://www.linkedin.com/in/nand-kishore-809880172/"
+                    class="text-decoration-underline text-light fs-6"> NAND KISHORE</a></h6>
         </footer>
     </section>
 
@@ -667,23 +806,26 @@
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#myTable").DataTable();
         });
     </script>
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     </script>
     <script>
         var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl)
         })
         var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {

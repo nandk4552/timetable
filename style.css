@@ -588,6 +588,23 @@
     .notify button {
         border-radius: 0 !important;
     }
+
+    .toast-container {
+        box-shadow: var(--box-shadow);
+
+        z-index: 100000 !important;
+
+    }
+
+    .toast-container .toast-header {
+        border: var(--border);
+    }
+
+    .toast-container .toast-body {
+        border: var(--border);
+        border-top: 0;
+    }
+
     .toast-container .toast-header .btn-close:hover {
         transform: rotate(90deg) !important;
     }

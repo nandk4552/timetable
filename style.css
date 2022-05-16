@@ -50,6 +50,12 @@
         background-color: var(--purple);
     }
 
+    .logo {
+        margin: 0 .5rem;
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+
     /* toggle */
 
     #preloader {
@@ -69,7 +75,7 @@
         border-radius: .5rem;
         box-shadow: var(--box-shadow);
         border: var(--border);
-    background-color: var(--light-color);
+        background-color: var(--light-color);
     }
 
     .contact-sec .box {
@@ -573,6 +579,17 @@
 
     .syllabus .card .card-header {
         background-color: var(--light-bg);
+    }
+
+    .notify {
+        margin-right: 2.4rem;
+    }
+
+    .notify button {
+        border-radius: 0 !important;
+    }
+    .toast-container .toast-header .btn-close:hover {
+        transform: rotate(90deg) !important;
     }
 
     /* @media (max-width:660px) {
